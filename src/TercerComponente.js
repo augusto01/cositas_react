@@ -18,8 +18,7 @@ export const TercerComponente = ({nombre, web, datos_usuario}) => {
 TercerComponente.propTypes = {
     nombre: PropTypes.string, 
     pagina: PropTypes.string,
-    
-
+  
 }
 
 

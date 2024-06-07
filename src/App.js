@@ -3,6 +3,7 @@ import './App.css';
 import MiComponente from './MiComponente';
 import { SegundoComponente } from './SegundoComponente';
 import { TercerComponente } from './TercerComponente';
+import { EventosComponentes } from './EventosComponentes';
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
         
         
         <TercerComponente nombre = 'Augusto' web = 'augustoalmiron.com' datos_usuario = {datos}/>
+        <EventosComponentes></EventosComponentes>
         
       </header>
       {/**Carfar componente */}
