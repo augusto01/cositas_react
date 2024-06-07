@@ -1,16 +1,27 @@
-import React from 'react'
+import React from 'react';
 
 export const EventosComponentes = () => {
-  return (
-    <div>EventosComponentes
-        <h1>Eventos React</h1>
+    const manejarClick = () => {
+        console.log('Has hecho click');
+    };
 
-        {/**Cuando le doy click a algo pasa esto  */}
+    const manejarDobleClick = () => {
+        console.log('Has hecho doble click');
+    };
 
-        /**Añadimos un valor por parametro */
-        <button onClick={(queonda = 'click')=> {
-            console.log('Has Hecho ',queonda.type)
-        }}>Haz click aqui !</button>
-    </div>
-  )
-}
+    return (
+        <div>
+            <h1>Eventos en React</h1>
+
+            {/* Evento click */}
+            <button onClick={manejarClick}>
+                ¡Haz click aquí!
+            </button>
+
+            {/* Evento doble click */}
+            <button onDoubleClick={manejarDobleClick}>
+                ¡Haz doble click aquí!
+            </button>
+        </div>
+    );
+};
